@@ -1,0 +1,15 @@
+Instuctions to run a program:
+
+1) pull the repo from dockerhub url
+docker pull varuninduri/shortestpath
+docker pull varuninduri/shortestpathui
+
+2) run the Docker iamge
+docker run shortestpath
+docker run shortestpathui
+
+3) load the UI page browser
+http://<ip address>:3000
+
+4) Give the Inputs as number of cities and location of the input file having distances
+ 
