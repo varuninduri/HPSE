@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Shortest Route</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body ng-app="ShortestRouteApp" ng-controller="ShortestRouteController" style="background:#F4F4F4;font-family: Gravur;margin:0 auto;background-image: url('./bg.png');background-repeat: no-repeat;">
+
+<div class="container">
+  <form action="">
+  <div class="row" style="margin-top:4em;">
+  <div class="col-md-offset-1 col-md-4">
+    <div class="form-group">
+      <label>Enter number of cities:</label>
+      <input type="text" ng-model="distance.nodes" class="form-control">
+    </div>
+    <div class="form-group">
+      <label for="Enter Floor">Enter the file path</label>
+      <input type="text" ng-model="distance.filepath" class="form-control">
+    </div>
+	<div align="center">
+	<button ng-click="cal()" type="button" class="btn btn-primary">Calculate</button>
+	</div>
+</div>
+
+ <div class="col-md-offset-1 col-md-3">
+  
+    <div class="form-group">
+    Result: {{output}}
+    </div>
+	
+</div>
+
+
+</div>
+  </form>
+  
+</div>
+
+</body>
+
+<script src="lib/jquery/jquery.1.10.2.min.js"></script>
+<script src="lib/bootstrap/bootstrap.min.js"></script>
+<script src="lib/angular/angular.js"></script>
+<script src="ngmodules/angular-route.js"></script>
+<script src="controllers/ShortestRouteApp.js"></script>
+<script src="controllers/ShortestRouteController.js"></script>
+<script src="lib/bootstrap/bootbox.js"></script>
+<script src="lib/bootstrap/ngBootbox.js"></script>
+
+</html>
