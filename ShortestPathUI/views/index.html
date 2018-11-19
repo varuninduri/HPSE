@@ -15,15 +15,15 @@
   <div class="row" style="margin-top:4em;">
   <div class="col-md-offset-1 col-md-4">
     <div class="form-group">
-      <label>Enter number of nodes:</label>
+      <label>Enter number of cities:</label>
       <input type="text" ng-model="distance.nodes" class="form-control">
     </div>
     <div class="form-group">
-      <label for="Enter Floor">Enter distance between cities:</label>
-      <textarea rows="5" cols="30"  ng-model="distance.filepath" class="form-control"></textarea>
+      <label for="Enter Floor">Enter the file path</label>
+      <input type="text" ng-model="distance.filepath" class="form-control">
     </div>
 	<div align="center">
-	<button ng-click="cal()" type="button" class="btn btn-primary">Find Route</button>
+	<button ng-click="cal()" type="button" class="btn btn-primary">Calculate</button>
 	</div>
 </div>
 
