@@ -11,5 +11,5 @@ docker run shortestpathui
 3) load the UI page browser
 http://<ip address>:3000
 
-4) Give the Inputs as number of cities and location of the input file having distances
+4) Give the Inputs as number of cities and location of the input file having distances.
  
