@@ -1,7 +1,7 @@
 /**
  * Module dependencies.
  */
-var express = require('express'), fs = require('fs'), http = require('http'), path = require('path'),passport = require('passport'),SamlStrategy = require('passport-saml').Strategy;
+var express = require('express'), fs = require('fs'), http = require('http'), path = require('path');
 
 var app = express();
 
