@@ -15,3 +15,9 @@ The dynamic programming procedure of the Held–Karp algorithm takes advantage o
 So essentially, instead of checking all solutions in a naive "top-down", brute force approach (of every possible permutation), we instead use a "bottom-up" approach where all the intermediate information required to solve the problem is developed once and once only. The initial step is the very smallest subpath. Every time we move up to solve a larger subpath, we are able to look up the solutions to all the smaller subpath problems which have already been computed. The time savings come because all of the smaller subproblems have already been solved and these savings compound exponentially (at each greater subpath level). But no "paths are removed" from the calculations–at the end of the procedure all of the subproblems will have been solved. The obvious drawback is that a very large memory size may be required to store all the intermediate results.
 
 In summary, the time savings of the Held–Karp algorithm follow from the fact that it never duplicates solving the solution to any subset (combination) of the cities. But the brute force approach will re compute the solution to any given subset combination many times.
+
+What is in the repository?
+The repository contains an example of an input file, and 2 projects including UI and Java Spring boot maven application
+
+1. Example.txt
+It is an example of a distance distance, where the different rows and columns refers to different locations. The main diagonal is always zero because the distance from one location to itself is always zero. Its important to know that the distance A-B could be different from the distance B-A.
