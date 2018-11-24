@@ -8,7 +8,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
-<body ng-app="ShortestRouteApp" ng-controller="ShortestRouteController" style="background:#F4F4F4;font-family: Gravur;margin:0 auto;background-image: url('./bg.png');background-repeat: no-repeat;">
+<body ng-app="RouteApp" ng-controller="RouteController" style="background:#F4F4F4;font-family: Gravur;margin:0 auto;background-image: url('./bg.png');background-repeat: no-repeat;">
 
 <div class="container">
   <form action="">
@@ -23,7 +23,7 @@
       <input type="text" ng-model="distance.filepath" class="form-control">
     </div>
 	<div align="center">
-	<button ng-click="cal()" type="button" class="btn btn-primary">Calculate</button>
+	<button ng-click="cal()" type="button" class="btn">Calculate</button>
 	</div>
 </div>
 
@@ -34,6 +34,19 @@
     </div>
 	
 </div>
+
+<table style="border: 1px solid #ddd">
+	<thead>
+	<th style="width:19%"><center>Cities</center></th>
+	<th style="width:25%"><center>File path</center></th>
+	<th style="width:60%"><center>Result</center></th>
+	</thead>
+  <tr ng-repeat="x in result">
+    <td style="width:15%"><center>{{ x.nodes }}</center></td>
+    <td style="width:25%"><center>{{ x.filepath}}</center></td>
+    <td style="width:60%"><center>{{ x.output }}</center></td>
+  </tr>
+</table>
 
 
 </div>
@@ -47,8 +60,8 @@
 <script src="lib/bootstrap/bootstrap.min.js"></script>
 <script src="lib/angular/angular.js"></script>
 <script src="ngmodules/angular-route.js"></script>
-<script src="controllers/ShortestRouteApp.js"></script>
-<script src="controllers/ShortestRouteController.js"></script>
+<script src="controllers/RouteApp.js"></script>
+<script src="controllers/RouteController.js"></script>
 <script src="lib/bootstrap/bootbox.js"></script>
 <script src="lib/bootstrap/ngBootbox.js"></script>
 
